@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resume-builder {
+  display: flex;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+
+.preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 50%;
+}

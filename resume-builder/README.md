@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive web application to create resumes. Built using **React** and **Vite**.
 
-Currently, two official plugins are available:
+## Features
+- Live preview of the resume while filling out the form
+- Easy to use form with fields like Name, Education, Experience, Skills, and Contact Info
+- Modern UI with instant updates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- Vite
+- JavaScript
+- HTML/CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+```
+resume-builder/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── ResumeForm.jsx
+│   │   └── ResumePreview.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Setup Instructions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository or download the ZIP.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Open your terminal and navigate to the project directory:
+```bash
+cd resume-builder
 ```
+
+3. Install the dependencies:
+```bash
+npm install
+```
+
+4. Run the development server:
+```bash
+npm run dev
+```
+
+5. Open your browser and navigate to:
+```
+http://localhost:5173
+```
+
+## Components
+
+### ResumeForm.jsx
+- A form where users can input their personal details, education, work experience, skills, etc.
+
+### ResumePreview.jsx
+- Displays the resume live as the user fills in the form.
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+Feel free to contribute by raising an issue or submitting a pull request! 🚀
